@@ -1,0 +1,110 @@
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o e.bindex.o e.bindex.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o areacalc.o areacalc.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o readnetcdf.o readnetcdf.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o read_threshold.o read_threshold.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o datetrack.o datetrack.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o anomaly.o anomaly.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o ccl.o ccl.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o spatialthresh.o spatialthresh.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o labelreorder.o labelreorder.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o GHG.o GHG.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o overlap.o overlap.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o nlabelreorder.o nlabelreorder.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o stat3.o stat3.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o durthresh.o durthresh.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o smfdist.o smfdist.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o sfdist.o sfdist.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o mfdist.o mfdist.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o ddist.o ddist.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o wddist.o wddist.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o sddist.o sddist.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o bdate.o bdate.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o wbdate.o wbdate.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o center.o center.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o wcenter.o wcenter.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o scenter.o scenter.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o center_dur.o center_dur.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o wcenter_dur.o wcenter_dur.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o scenter_dur.o scenter_dur.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o center_dur_date.o center_dur_date.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o center_whole.o center_whole.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o center_whole_date.o center_whole_date.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o wavebreak.o wavebreak.F
+ifort  -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -I/usr/hdf5/1.10.5_intel19/include  -c -o wwavebreak.o wwavebreak.F
+ifort  -o bindex.exe -assume byterecl -mcmodel medium -shared-intel -I/usr/hdf5/1.10.5_intel19/include -I/usr/zlib/1.2.11/include -I/usr/netcdf/4.6.1_intel19/include -I/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/include -Wl,-rpath=/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/ e.bindex.o areacalc.o readnetcdf.o read_threshold.o datetrack.o anomaly.o ccl.o spatialthresh.o labelreorder.o GHG.o overlap.o nlabelreorder.o stat3.o durthresh.o smfdist.o sfdist.o mfdist.o ddist.o wddist.o sddist.o bdate.o wbdate.o center.o wcenter.o scenter.o center_dur.o wcenter_dur.o scenter_dur.o center_dur_date.o center_whole.o center_whole_date.o wavebreak.o wwavebreak.o  -L/usr/zlib/1.2.11/lib -lm -lz -L/usr/hdf5/1.10.5_intel19/lib -lhdf5 -lhdf5_hl -L/usr/netcdf/4.6.1_intel19/lib -lnetcdf -lnetcdff -L/usr/intel/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin
+   5802.085       5795.819       5789.552       5782.502       5775.452    
+ A(          30 ,         150 ,           1 ) =    66.85116    
+ A(          80 ,         150 ,           1 ) =    79.89399    
+ A(         130 ,         150 ,           1 ) =    62.45786    
+ A(         180 ,         150 ,           1 ) =    75.99972    
+ 
+ File=          11
+ Tracking anomalies...
+ Total number of blocks =         1469
+           2         371         725         725           9           0
+           3         582        1092        1092           5           0
+           5         949        1818        1818           9           0
+           5         953        1823        1823           5           0
+           6        1133        2182        2182          13           0
+          10        1902        3645        3645           8           0
+          12        2316        4375        4375          11           0
+          12        2320        4377        4377           6           0
+          14        2718        5109        5109           8           0
+          14        2719        5109        5109          12           0
+          16        3120        5840        5840           5           0
+          18        3547        6569        6569          15           0
+          18        3548        6569        6569           9           0
+          19        3746        6932        6932           7           0
+          19        3747        6935        6935          14           0
+          20        3950        7291        7291          11           0
+          21        4169        7661        7661          11           0
+          22        4373        8030        8030           5           0
+          24        4764        8755        8755           7           0
+          27        5328        9855        9855           9           0
+          29        5718       10582       10582          11           0
+          29        5720       10585       10585           6           0
+          30        5902       10939       10939          17           0
+          30        5911       10946       10946           6           0
+          32        6348       11666       11666          21           0
+          32        6353       11679       11679          24           0
+          36        7115       13138       13138           7           0
+          37        7359       13500       13500          11           0
+          38        7563       13867       13867          20           0
+          38        7566       13870       13870          11           0
+          39        7740       14232       14232          10           0
+          40        7929       14595       14595           7           0
+          40        7930       14597       14597           8           0
+          42        8354       15328       15328           8           0
+          43        8538       15694       15694           5           0
+          46        9150       16788       16788          12           0
+ Label number of anomalies satisfying (A),(S),(O) & GHG =        9192
+ Total number of blocks =         1456
+ Number of D >= 50 days =            0
+ 
+   Finding distributions...
+ Total block event =               1456 [40 yrs]         1456
+ Total block days  =              11207                 11207
+ Total center days =                   11207
+ bday =        11207
+        1454       16822           2
+        1455       16822           2
+ center occurrence > 2 at the same day =            2
+ Total block event WNP blocks (bew)   =         209
+ Total block days  WNP blocks (bdayw) =        1822
+ Total center days WNP blocks         =        1167
+ Total block event WNP blocks (bec)  =         219
+ Total center days WNP blocks (bdayc)=        1217
+ 
+ Total center days WNP blocks (allposWNP) =         1217   6.000000    
+           0
+ bdayc =         1217        1217
+ center occurrence = 1 at same day        1215   99.83566     %
+ center occurrence = 2 at same day           1  8.2169272E-02 %
+ center occurrence > 2 at same day           0
+ bdayw =         1822        1822
+ center occurrence = 1 at same day        1780   97.69484     %
+ center occurrence = 2 at same day          21   1.152580     %
+ center occurrence > 2 at same day           0
+ DONE
+ 
+rm -f e.bindex.o areacalc.o readnetcdf.o read_threshold.o datetrack.o anomaly.o ccl.o spatialthresh.o labelreorder.o GHG.o overlap.o nlabelreorder.o stat3.o durthresh.o smfdist.o sfdist.o mfdist.o ddist.o wddist.o sddist.o bdate.o wbdate.o center.o wcenter.o scenter.o center_dur.o wcenter_dur.o scenter_dur.o center_dur_date.o center_whole.o center_whole_date.o wavebreak.o wwavebreak.o 
