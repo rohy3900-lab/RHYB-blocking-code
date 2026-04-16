@@ -236,6 +236,7 @@ set ctlfile2 = ${outfile4d}.ctl
 
 cat >! $ctlfile2 << EOF
 DSET ^${outfile4d}.bin
+OPTIONS 365_day_calendar
 TITLE blocking 
 UNDEF 9999999
 XDEF ${ix} LINEAR 0 ${lonres}
