@@ -1,6 +1,6 @@
 # SKS Anomaly for Blocking Detection
 
-Computes the SKS Z500 anomaly and monthly 1σ thresholds, following the methodology of Sausen et al. (1995). The output anomaly field and threshold file are used as input for the subsequent blocking detection algorithm.
+The output anomaly field and threshold file are used as input for the subsequent blocking detection algorithm.
 
 ## Prerequisites
 
